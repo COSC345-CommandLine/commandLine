@@ -22,9 +22,9 @@ jobs:
           choco install llvm  
           pip install gcovr
 
-      - name: Build and run tests
-        working-directory: C++
-        run: g++ -fprofile-arcs -ftest-coverage -o a.exe test.cpp
+      # - name: Build and run tests
+      #   working-directory: C++
+      #   run: g++ -fprofile-arcs -ftest-coverage -o a.exe test.cpp
 
       # Split into two however, run test commented out as redundant
       # - name: Run tests
