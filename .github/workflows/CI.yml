@@ -32,7 +32,8 @@ jobs:
           
       - name: Generate code coverage report
         run: |
-          cmd /c "cd C++ && llvm-cov gcov test.cpp"
+          cmd /c "cd C++ && --coverage test.cpp
+          cmd /c "cd C++ && llvm-cov gcov test.gcno test.gcda"
           cmd /c "cd C++ && gcovr -r . --xml -o ci-coverage.xml"
   
       - name: Upload Report to Codecov
