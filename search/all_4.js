@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hidecursor_6',['hideCursor',['../terminalHelpers_8cpp.html#ab3108839b75614c3c5e93409e187732e',1,'hideCursor():&#160;terminalHelpers.cpp'],['../terminalHelpers_8hpp.html#ab3108839b75614c3c5e93409e187732e',1,'hideCursor():&#160;terminalHelpers.cpp']]]
+  ['getfullscreendimensions_9',['getFullScreenDimensions',['../terminalHelpers_8cpp.html#a6a0048203c4545893207fbd57d3e6536',1,'getFullScreenDimensions():&#160;terminalHelpers.cpp'],['../terminalHelpers_8hpp.html#a6a0048203c4545893207fbd57d3e6536',1,'getFullScreenDimensions():&#160;terminalHelpers.cpp']]]
 ];

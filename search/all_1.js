@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['delete2darray_3',['delete2DArray',['../readArt_8cpp.html#a6028987d627b6291e6b8ba3732fd1d9f',1,'delete2DArray(char **array, int height):&#160;readArt.cpp'],['../readArt_8hpp.html#a6028987d627b6291e6b8ba3732fd1d9f',1,'delete2DArray(char **array, int height):&#160;readArt.cpp']]]
+  ['callumroom_2ecpp_2',['callumRoom.cpp',['../callumRoom_8cpp.html',1,'']]],
+  ['callumroom_2ehpp_3',['callumRoom.hpp',['../callumRoom_8hpp.html',1,'']]],
+  ['clearpartialscreen_4',['clearPartialScreen',['../terminalHelpers_8cpp.html#a3dea5895dfe1700e7d38f2640291f275',1,'clearPartialScreen(int startY, int endY):&#160;terminalHelpers.cpp'],['../terminalHelpers_8hpp.html#a3dea5895dfe1700e7d38f2640291f275',1,'clearPartialScreen(int startY, int endY):&#160;terminalHelpers.cpp']]],
+  ['clearwholescreen_5',['clearWholeScreen',['../terminalHelpers_8cpp.html#aefe93d79d5d250e0b986c2760f80973f',1,'clearWholeScreen():&#160;terminalHelpers.cpp'],['../terminalHelpers_8hpp.html#aefe93d79d5d250e0b986c2760f80973f',1,'clearWholeScreen():&#160;terminalHelpers.cpp']]],
+  ['command_20line_6',['Command Line',['../md_ReadMe.html',1,'']]]
 ];
