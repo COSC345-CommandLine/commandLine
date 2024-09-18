@@ -83,12 +83,12 @@ $(function() {
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a67aaa3852b8f26d1e196c118621f229c"><td class="memItemLeft" align="right" valign="top"><a id="a67aaa3852b8f26d1e196c118621f229c"></a>
-std::chrono::time_point&lt; std::chrono::steady_clock &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>startTimer</b> ()</td></tr>
-<tr class="separator:a67aaa3852b8f26d1e196c118621f229c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dea53c00a9eebe192724721b6b1f0a9"><td class="memItemLeft" align="right" valign="top"><a id="a7dea53c00a9eebe192724721b6b1f0a9"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>checkRemainingTime</b> (std::chrono::time_point&lt; std::chrono::steady_clock &gt; startTime, int totalSeconds)</td></tr>
-<tr class="separator:a7dea53c00a9eebe192724721b6b1f0a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b827c2ed46b1beea20cc08dbb90d476"><td class="memItemLeft" align="right" valign="top"><a id="a9b827c2ed46b1beea20cc08dbb90d476"></a>
+std::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><b>startTimer</b> ()</td></tr>
+<tr class="separator:a9b827c2ed46b1beea20cc08dbb90d476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8feb60e82db501bff244db36c2de5f33"><td class="memItemLeft" align="right" valign="top"><a id="a8feb60e82db501bff244db36c2de5f33"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>checkRemainingTime</b> (std::chrono::steady_clock::time_point startTime, int totalSeconds)</td></tr>
+<tr class="separator:a8feb60e82db501bff244db36c2de5f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94a758019a85b66f7f72571f8742948e"><td class="memItemLeft" align="right" valign="top"><a id="a94a758019a85b66f7f72571f8742948e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>printRemainingTime</b> (int remainingTime)</td></tr>
 <tr class="separator:a94a758019a85b66f7f72571f8742948e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -104,12 +104,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>solvedLachlan</b> = f
 <tr class="memitem:aa2dcaae1412870718aec305197c2a8ff"><td class="memItemLeft" align="right" valign="top"><a id="aa2dcaae1412870718aec305197c2a8ff"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>timerRunning</b> = false</td></tr>
 <tr class="separator:aa2dcaae1412870718aec305197c2a8ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91ec5e28e006e9e6d60dfc914a5c1d20"><td class="memItemLeft" align="right" valign="top"><a id="a91ec5e28e006e9e6d60dfc914a5c1d20"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>totalTimerSeconds</b> = 120</td></tr>
-<tr class="separator:a91ec5e28e006e9e6d60dfc914a5c1d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed26f9b6c486396ff8779aaeccc89043"><td class="memItemLeft" align="right" valign="top"><a id="aed26f9b6c486396ff8779aaeccc89043"></a>
-std::chrono::time_point&lt; std::chrono::steady_clock &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>timeAtStartTime</b></td></tr>
-<tr class="separator:aed26f9b6c486396ff8779aaeccc89043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0108653b129bc60b56693a2601bfa644"><td class="memItemLeft" align="right" valign="top"><a id="a0108653b129bc60b56693a2601bfa644"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>lachlanZoomed</b> = false</td></tr>
+<tr class="separator:a0108653b129bc60b56693a2601bfa644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa90f9d45723c6edbf37b77720d98ee2c"><td class="memItemLeft" align="right" valign="top"><a id="aa90f9d45723c6edbf37b77720d98ee2c"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>totalTimerSeconds</b> = 120</td></tr>
+<tr class="separator:aa90f9d45723c6edbf37b77720d98ee2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f2b5cb5acaa53d096ba7297dd69af28"><td class="memItemLeft" align="right" valign="top"><a id="a6f2b5cb5acaa53d096ba7297dd69af28"></a>
+std::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><b>timeAtStartTime</b></td></tr>
+<tr class="separator:a6f2b5cb5acaa53d096ba7297dd69af28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4819a3c1641d50ea1d5ff5da441da960"><td class="memItemLeft" align="right" valign="top"><a id="a4819a3c1641d50ea1d5ff5da441da960"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>outputLachlan</b></td></tr>
 <tr class="separator:a4819a3c1641d50ea1d5ff5da441da960"><td class="memSeparator" colspan="2">&#160;</td></tr>
