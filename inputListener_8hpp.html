@@ -99,9 +99,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a1419f655824311811fae1ba7200abd45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inputListener_8hpp.html#a1419f655824311811fae1ba7200abd45">roomInputListenerOscar</a> (bool *oscarZoomed)</td></tr>
 <tr class="memdesc:a1419f655824311811fae1ba7200abd45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listens and responds to input inside of Oscars Room.  <a href="inputListener_8hpp.html#a1419f655824311811fae1ba7200abd45">More...</a><br /></td></tr>
 <tr class="separator:a1419f655824311811fae1ba7200abd45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae709089a43c433373c72dc0ac4292e34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inputListener_8hpp.html#ae709089a43c433373c72dc0ac4292e34">roomInputListenerLachlan</a> (bool *timerRunning, bool *lachlanZoomed)</td></tr>
-<tr class="memdesc:ae709089a43c433373c72dc0ac4292e34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listens and responds to input inside of Lachlans Room.  <a href="inputListener_8hpp.html#ae709089a43c433373c72dc0ac4292e34">More...</a><br /></td></tr>
-<tr class="separator:ae709089a43c433373c72dc0ac4292e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a452dc297f8f6c85c12a3412460e5b91f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inputListener_8hpp.html#a452dc297f8f6c85c12a3412460e5b91f">roomInputListenerLachlan</a> (bool *timerRunning, bool *lachlanZoomed, bool *doorOpen, bool *lachlanSolved)</td></tr>
+<tr class="memdesc:a452dc297f8f6c85c12a3412460e5b91f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listens and responds to input inside of Lachlans Room.  <a href="inputListener_8hpp.html#a452dc297f8f6c85c12a3412460e5b91f">More...</a><br /></td></tr>
+<tr class="separator:a452dc297f8f6c85c12a3412460e5b91f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5441c427ad5689bc6479a9e633f46360"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inputListener_8hpp.html#a5441c427ad5689bc6479a9e633f46360">roomInputListenerAnthony</a> (bool *anthonyZoomed)</td></tr>
 <tr class="memdesc:a5441c427ad5689bc6479a9e633f46360"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listens and responds to input inside of Anthonys Room.  <a href="inputListener_8hpp.html#a5441c427ad5689bc6479a9e633f46360">More...</a><br /></td></tr>
 <tr class="separator:a5441c427ad5689bc6479a9e633f46360"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -201,8 +201,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>zoomed</b></td></tr>
 
 </div>
 </div>
-<a id="ae709089a43c433373c72dc0ac4292e34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae709089a43c433373c72dc0ac4292e34">&#9670;&nbsp;</a></span>roomInputListenerLachlan()</h2>
+<a id="a452dc297f8f6c85c12a3412460e5b91f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a452dc297f8f6c85c12a3412460e5b91f">&#9670;&nbsp;</a></span>roomInputListenerLachlan()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -217,7 +217,19 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>zoomed</b></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool *&#160;</td>
-          <td class="paramname"><em>lachlanZoomed</em>&#160;</td>
+          <td class="paramname"><em>lachlanZoomed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>doorOpen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>lachlanSolved</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
