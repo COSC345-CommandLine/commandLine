@@ -91,6 +91,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aab154b082dd58cba1ed43eb82adcf168"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inputListener_8cpp.html#aab154b082dd58cba1ed43eb82adcf168">processInput</a> ()</td></tr>
 <tr class="memdesc:aab154b082dd58cba1ed43eb82adcf168"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter for global variable 'input'.  <a href="inputListener_8cpp.html#aab154b082dd58cba1ed43eb82adcf168">More...</a><br /></td></tr>
 <tr class="separator:aab154b082dd58cba1ed43eb82adcf168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6360027afc67b66e1d30b028f02ddbe1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inputListener_8cpp.html#a6360027afc67b66e1d30b028f02ddbe1">roomInputListenerIntro</a> (bool *introZoomed)</td></tr>
+<tr class="memdesc:a6360027afc67b66e1d30b028f02ddbe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listens and responds to input inside of Oscars Room.  <a href="inputListener_8cpp.html#a6360027afc67b66e1d30b028f02ddbe1">More...</a><br /></td></tr>
+<tr class="separator:a6360027afc67b66e1d30b028f02ddbe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1419f655824311811fae1ba7200abd45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inputListener_8cpp.html#a1419f655824311811fae1ba7200abd45">roomInputListenerOscar</a> (bool *oscarZoomed)</td></tr>
 <tr class="memdesc:a1419f655824311811fae1ba7200abd45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listens and responds to input inside of Oscars Room.  <a href="inputListener_8cpp.html#a1419f655824311811fae1ba7200abd45">More...</a><br /></td></tr>
 <tr class="separator:a1419f655824311811fae1ba7200abd45"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,6 +201,27 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>backspace</b> = 8</td>
 </div><div class="memdoc">
 
 <p>Listens and responds to input inside of callum Room. </p>
+<p>Listens for left and right arrows for navigation between walls. Listens for enter on zoomable walls. Listens for 'o' when zoomed in, and stops listening for left and right input when zoomed in </p>
+
+</div>
+</div>
+<a id="a6360027afc67b66e1d30b028f02ddbe1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6360027afc67b66e1d30b028f02ddbe1">&#9670;&nbsp;</a></span>roomInputListenerIntro()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void roomInputListenerIntro </td>
+          <td>(</td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>oscarZoomed</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Listens and responds to input inside of Oscars Room. </p>
 <p>Listens for left and right arrows for navigation between walls. Listens for enter on zoomable walls. Listens for 'o' when zoomed in, and stops listening for left and right input when zoomed in </p>
 
 </div>
