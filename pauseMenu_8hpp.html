@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: C++/saveOrLoadGame.hpp File Reference</title>
+<title>My Project: C++/pauseMenu.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,36 +69,32 @@ $(function() {
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">saveOrLoadGame.hpp File Reference</div>  </div>
+<div class="title">pauseMenu.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Header file for saveOrLoadGame.cpp.  
+<p>Header file for pauseMenu.cpp.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;fstream&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
-<code>#include &lt;ctime&gt;</code><br />
-<code>#include &quot;<a class="el" href="introRoom_8hpp_source.html">introRoom.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="oscarRoom_8hpp_source.html">oscarRoom.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="lachlanRoom_8hpp_source.html">lachlanRoom.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="anthonyRoom_8hpp_source.html">anthonyRoom.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="callumRoom_8hpp_source.html">callumRoom.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="textBox_8hpp_source.html">textBox.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="startScreen_8hpp_source.html">startScreen.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="renderArt_8hpp_source.html">renderArt.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="optionsBox_8hpp_source.html">optionsBox.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="terminalHelpers_8hpp_source.html">terminalHelpers.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="saveOrLoadGame_8hpp_source.html">saveOrLoadGame.hpp</a>&quot;</code><br />
+<code>#include &lt;windows.h&gt;</code><br />
 </div>
-<p><a href="saveOrLoadGame_8hpp_source.html">Go to the source code of this file.</a></p>
+<p><a href="pauseMenu_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab3aa187a2ec91f0a36fc2da71d1bbff4"><td class="memItemLeft" align="right" valign="top"><a id="ab3aa187a2ec91f0a36fc2da71d1bbff4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>saveGame</b> (bool currentRoomZoomed)</td></tr>
-<tr class="separator:ab3aa187a2ec91f0a36fc2da71d1bbff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b1879272b256c65fc7633a777e2400a"><td class="memItemLeft" align="right" valign="top"><a id="a0b1879272b256c65fc7633a777e2400a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>loadGame</b> (const std::string &amp;saveFileName)</td></tr>
-<tr class="separator:a0b1879272b256c65fc7633a777e2400a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96d662da115e2e95741bd9b31f652335"><td class="memItemLeft" align="right" valign="top"><a id="a96d662da115e2e95741bd9b31f652335"></a>
-std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>getSaveFilesList</b> ()</td></tr>
-<tr class="separator:a96d662da115e2e95741bd9b31f652335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d3ba67e15bc925b38ce62a4833be327"><td class="memItemLeft" align="right" valign="top"><a id="a4d3ba67e15bc925b38ce62a4833be327"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pauseMenu_8hpp.html#a4d3ba67e15bc925b38ce62a4833be327">pauseMenu</a> (bool currentRoomZoomed)</td></tr>
+<tr class="memdesc:a4d3ba67e15bc925b38ce62a4833be327"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and displays the pause menu. <br /></td></tr>
+<tr class="separator:a4d3ba67e15bc925b38ce62a4833be327"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -117,22 +113,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>artWidth</b></td></tr>
 <tr class="memitem:aff452e48e028c87a7c04e3e93939ba46"><td class="memItemLeft" align="right" valign="top"><a id="aff452e48e028c87a7c04e3e93939ba46"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>artHeight</b></td></tr>
 <tr class="separator:aff452e48e028c87a7c04e3e93939ba46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4e3322510fc2cf99150f3690d4db6fc"><td class="memItemLeft" align="right" valign="top"><a id="af4e3322510fc2cf99150f3690d4db6fc"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>currentWallIndex</b></td></tr>
-<tr class="separator:af4e3322510fc2cf99150f3690d4db6fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31f0bf01ed14cddd1395bbde87e35223"><td class="memItemLeft" align="right" valign="top"><a id="a31f0bf01ed14cddd1395bbde87e35223"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>roomNumber</b></td></tr>
-<tr class="separator:a31f0bf01ed14cddd1395bbde87e35223"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73b59a6209948ae74831868c4f0e0fd2"><td class="memItemLeft" align="right" valign="top"><a id="a73b59a6209948ae74831868c4f0e0fd2"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>globalZoomed</b></td></tr>
-<tr class="separator:a73b59a6209948ae74831868c4f0e0fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a018e8c5c01f327d5a8aac8c997818cae"><td class="memItemLeft" align="right" valign="top"><a id="a018e8c5c01f327d5a8aac8c997818cae"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>saveFileName</b></td></tr>
-<tr class="separator:a018e8c5c01f327d5a8aac8c997818cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Header file for saveOrLoadGame.cpp. </p>
-<p>Saves game state to txt file or Loads game state from txt file </p>
+<div class="textblock"><p>Header file for pauseMenu.cpp. </p>
+<p>Creates and displays the pause menu </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
