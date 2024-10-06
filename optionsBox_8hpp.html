@@ -79,6 +79,7 @@ $(function() {
 <code>#include &lt;fstream&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;string&gt;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
 </div>
 <p><a href="optionsBox_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -87,6 +88,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa12009c7f2600ce712f95880c383e680"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="optionsBox_8hpp.html#aa12009c7f2600ce712f95880c383e680">renderOptionsBox</a> (int startX, int endX, int startY, int endY, std::vector&lt; std::string &gt; options)</td></tr>
 <tr class="memdesc:aa12009c7f2600ce712f95880c383e680"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and displays box with options to select.  <a href="optionsBox_8hpp.html#aa12009c7f2600ce712f95880c383e680">More...</a><br /></td></tr>
 <tr class="separator:aa12009c7f2600ce712f95880c383e680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81f5766f34c26c0ff96862790285a7e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="optionsBox_8hpp.html#a81f5766f34c26c0ff96862790285a7e2">renderOptionsBox</a> (int startX, int endX, int startY, int endY, std::vector&lt; std::string &gt; optionsIn, bool *timerRunning, const int totalTimerSeconds, bool currentRoomZoomed)</td></tr>
+<tr class="memdesc:a81f5766f34c26c0ff96862790285a7e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and displays box with options to select.  <a href="optionsBox_8hpp.html#a81f5766f34c26c0ff96862790285a7e2">More...</a><br /></td></tr>
+<tr class="separator:a81f5766f34c26c0ff96862790285a7e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a879ca5687570b58d771d7b074efb14d8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="optionsBox_8hpp.html#a879ca5687570b58d771d7b074efb14d8">stringInputBox</a> (std::string wordIn)</td></tr>
 <tr class="memdesc:a879ca5687570b58d771d7b074efb14d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and displays box that user can input word into.  <a href="optionsBox_8hpp.html#a879ca5687570b58d771d7b074efb14d8">More...</a><br /></td></tr>
 <tr class="separator:a879ca5687570b58d771d7b074efb14d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -105,7 +109,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>totalConsoleWidth</b><
 <p>Provides other files the ability to create and display interactive boxes on screen </p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="aa12009c7f2600ce712f95880c383e680"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa12009c7f2600ce712f95880c383e680">&#9670;&nbsp;</a></span>renderOptionsBox()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa12009c7f2600ce712f95880c383e680">&#9670;&nbsp;</a></span>renderOptionsBox() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -156,6 +160,86 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>totalConsoleWidth</b><
     <tr><td class="paramname">startY</td><td>[in] top left Y coord of box </td></tr>
     <tr><td class="paramname">endY</td><td>[in] bottom right Y coord of box </td></tr>
     <tr><td class="paramname">options</td><td>[in] string array of options to be displayed and chosen from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int returned is index of option chosen in inputed array </dd></dl>
+
+</div>
+</div>
+<a id="a81f5766f34c26c0ff96862790285a7e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81f5766f34c26c0ff96862790285a7e2">&#9670;&nbsp;</a></span>renderOptionsBox() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int renderOptionsBox </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>startX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>endX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>startY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>endY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::string &gt;&#160;</td>
+          <td class="paramname"><em>optionsIn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>timerRunning</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>totalTimerSeconds</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>currentRoomZoomed</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates and displays box with options to select. </p>
+<p>Evenly disperses the options in a vertical fashion (For Now) </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">startX</td><td>[in] top left X coord of box </td></tr>
+    <tr><td class="paramname">endX</td><td>[in] bottom right X coord of box </td></tr>
+    <tr><td class="paramname">startY</td><td>[in] top left Y coord of box </td></tr>
+    <tr><td class="paramname">endY</td><td>[in] bottom right Y coord of box </td></tr>
+    <tr><td class="paramname">optionsIn</td><td>[in] string array of options to be displayed and chosen from </td></tr>
+    <tr><td class="paramname">timerRunning</td><td>[in] bool of whether the timer is running, checks if rendering of timer needed </td></tr>
+    <tr><td class="paramname">totalTimerSeconds</td><td>[in] the amount of time allocated to the timer </td></tr>
+    <tr><td class="paramname">currentRoomZoomed</td><td>[in] bool current rooms zoom status </td></tr>
   </table>
   </dd>
 </dl>

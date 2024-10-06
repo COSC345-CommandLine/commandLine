@@ -107,9 +107,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aba351fad2fef36224bf14c21fdc80604"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inputListener_8cpp.html#aba351fad2fef36224bf14c21fdc80604">roomInputListenerCallum</a> (bool *callumZoomed)</td></tr>
 <tr class="memdesc:aba351fad2fef36224bf14c21fdc80604"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listens and responds to input inside of callum Room.  <a href="inputListener_8cpp.html#aba351fad2fef36224bf14c21fdc80604">More...</a><br /></td></tr>
 <tr class="separator:aba351fad2fef36224bf14c21fdc80604"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9047154172553f545afe0afefc9b2682"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inputListener_8cpp.html#a9047154172553f545afe0afefc9b2682">startMenuListener</a> ()</td></tr>
-<tr class="memdesc:a9047154172553f545afe0afefc9b2682"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listens for up, down, and enter keys when in the start menu.  <a href="inputListener_8cpp.html#a9047154172553f545afe0afefc9b2682">More...</a><br /></td></tr>
-<tr class="separator:a9047154172553f545afe0afefc9b2682"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23357857c5c611e59ffa367080e12848"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inputListener_8cpp.html#a23357857c5c611e59ffa367080e12848">upDownEnterListener</a> ()</td></tr>
+<tr class="memdesc:a23357857c5c611e59ffa367080e12848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listens for up, down, and enter keys when in the start menu.  <a href="inputListener_8cpp.html#a23357857c5c611e59ffa367080e12848">More...</a><br /></td></tr>
+<tr class="separator:a23357857c5c611e59ffa367080e12848"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3f63aa70892845252f66dc4752ca10e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inputListener_8cpp.html#aa3f63aa70892845252f66dc4752ca10e">textInputListener</a> (std::string partialWord)</td></tr>
 <tr class="memdesc:aa3f63aa70892845252f66dc4752ca10e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listens for char input from keyboard.  <a href="inputListener_8cpp.html#aa3f63aa70892845252f66dc4752ca10e">More...</a><br /></td></tr>
 <tr class="separator:aa3f63aa70892845252f66dc4752ca10e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -294,26 +294,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>esc</b> = 27</td></tr>
 
 </div>
 </div>
-<a id="a9047154172553f545afe0afefc9b2682"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9047154172553f545afe0afefc9b2682">&#9670;&nbsp;</a></span>startMenuListener()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int startMenuListener </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Listens for up, down, and enter keys when in the start menu. </p>
-<dl class="section return"><dt>Returns</dt><dd>int that signifies whether up (1), down (2), enter (0), or nothing (3) was pressed </dd></dl>
-
-</div>
-</div>
 <a id="aa3f63aa70892845252f66dc4752ca10e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa3f63aa70892845252f66dc4752ca10e">&#9670;&nbsp;</a></span>textInputListener()</h2>
 
@@ -338,6 +318,26 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>esc</b> = 27</td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string of completed word wanting to be inputed in text box </dd></dl>
+
+</div>
+</div>
+<a id="a23357857c5c611e59ffa367080e12848"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23357857c5c611e59ffa367080e12848">&#9670;&nbsp;</a></span>upDownEnterListener()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int upDownEnterListener </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Listens for up, down, and enter keys when in the start menu. </p>
+<dl class="section return"><dt>Returns</dt><dd>int that signifies whether up (1), down (2), enter (0), or nothing (3) was pressed </dd></dl>
 
 </div>
 </div>

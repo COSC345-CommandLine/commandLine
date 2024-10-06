@@ -77,21 +77,13 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="lachlanRoom_8hpp_source.html">lachlanRoom.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="optionsBox_8hpp_source.html">optionsBox.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="timer_8hpp_source.html">timer.hpp</a>&quot;</code><br />
 <code>#include &lt;chrono&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9b827c2ed46b1beea20cc08dbb90d476"><td class="memItemLeft" align="right" valign="top"><a id="a9b827c2ed46b1beea20cc08dbb90d476"></a>
-std::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><b>startTimer</b> ()</td></tr>
-<tr class="separator:a9b827c2ed46b1beea20cc08dbb90d476"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8feb60e82db501bff244db36c2de5f33"><td class="memItemLeft" align="right" valign="top"><a id="a8feb60e82db501bff244db36c2de5f33"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>checkRemainingTime</b> (std::chrono::steady_clock::time_point startTime, int totalSeconds)</td></tr>
-<tr class="separator:a8feb60e82db501bff244db36c2de5f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94a758019a85b66f7f72571f8742948e"><td class="memItemLeft" align="right" valign="top"><a id="a94a758019a85b66f7f72571f8742948e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>printRemainingTime</b> (int remainingTime)</td></tr>
-<tr class="separator:a94a758019a85b66f7f72571f8742948e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c069a0a46a36825123f6874370cbb03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lachlanRoom_8cpp.html#a4c069a0a46a36825123f6874370cbb03">runLachlan</a> ()</td></tr>
 <tr class="memdesc:a4c069a0a46a36825123f6874370cbb03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the Lachlan Room functionality.  <a href="lachlanRoom_8cpp.html#a4c069a0a46a36825123f6874370cbb03">More...</a><br /></td></tr>
 <tr class="separator:a4c069a0a46a36825123f6874370cbb03"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,7 +103,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>lachlanZoomed</b> = f
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>doorOpen</b> = false</td></tr>
 <tr class="separator:acf5414a7722ecbe7fb5dc994a74fcd68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab9247f22c491a1c71694c6fcd543855"><td class="memItemLeft" align="right" valign="top"><a id="aab9247f22c491a1c71694c6fcd543855"></a>
-const std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>bodyParts</b> = {&quot;HEAD&quot;, &quot;SHOULDER&quot;, &quot;KNEE&quot;, &quot;TOE&quot;}</td></tr>
+const std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>bodyParts</b> = {&quot;HEAD&quot;, &quot;SHOULDER&quot;, &quot;KNEE&quot;, &quot;TOE&quot;, &quot;EXIT TO SEARCH ROOM AGAIN&quot;}</td></tr>
 <tr class="separator:aab9247f22c491a1c71694c6fcd543855"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed5f72f4b0098e018ccb670dbd4e5e66"><td class="memItemLeft" align="right" valign="top"><a id="aed5f72f4b0098e018ccb670dbd4e5e66"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>tempAnswer</b></td></tr>
@@ -125,9 +117,6 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>roomAnswer</b>
 <tr class="memitem:aa90f9d45723c6edbf37b77720d98ee2c"><td class="memItemLeft" align="right" valign="top"><a id="aa90f9d45723c6edbf37b77720d98ee2c"></a>
 const int&#160;</td><td class="memItemRight" valign="bottom"><b>totalTimerSeconds</b> = 90</td></tr>
 <tr class="separator:aa90f9d45723c6edbf37b77720d98ee2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f2b5cb5acaa53d096ba7297dd69af28"><td class="memItemLeft" align="right" valign="top"><a id="a6f2b5cb5acaa53d096ba7297dd69af28"></a>
-std::chrono::steady_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><b>timeAtStartTime</b></td></tr>
-<tr class="separator:a6f2b5cb5acaa53d096ba7297dd69af28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4819a3c1641d50ea1d5ff5da441da960"><td class="memItemLeft" align="right" valign="top"><a id="a4819a3c1641d50ea1d5ff5da441da960"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>outputLachlan</b></td></tr>
 <tr class="separator:a4819a3c1641d50ea1d5ff5da441da960"><td class="memSeparator" colspan="2">&#160;</td></tr>
