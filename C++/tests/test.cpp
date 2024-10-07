@@ -15,7 +15,7 @@
 #include "../startScreen.hpp"
 
 // Test set up
-const std::string room1test[4] = {"art/room1/W1.txt","art/room1/W2.txt","art/room1/W3.txt","art/room1/W4.txt"};
+const std::string room1test[4] = {"art/intro/W1.txt","art/intro/W2.txt","art/intro/W3.txt","art/intro/W4.txt"};
 const std::string room2test[4] = {"art/room2/W1.txt","art/room2/W2.txt","art/room2/W3.txt","art/room2/W4.txt"};
 const std::string room3test[4] = {"art/room3/W1.txt","art/room3/W2.txt","art/room3/W3.txt","art/room3/W4.txt"};
 const std::string room4test[4] = {"art/room4/W1.txt","art/room4/W2.txt","art/room4/W3.txt","art/room4/W4.txt"};
@@ -162,7 +162,7 @@ bool wallIndexCheck(){
 // test wall index movments are handled correctly for different rooms
 bool startMenu(){
     input = 77; //  right 
-    int res = startMenuListener();
+    int res = upDownEnterListener();
     // user navigates right which isnt possible and therefore should return nothing
     if(res == 2 || res == 1){
         std::cout << "START MENU FUNCTION FAILED" << std::endl;
@@ -170,7 +170,7 @@ bool startMenu(){
     } 
 
     input = 75; //  left 
-    res = startMenuListener();
+    res = upDownEnterListener();
     // user navigates left which isnt possible
     if(res != 3){
         std::cout << "START MENU FUNCTION FAILED" << std::endl;
@@ -178,7 +178,7 @@ bool startMenu(){
     } 
 
     input = 80; //  down
-    res = startMenuListener();
+    res = upDownEnterListener();
     // user navigates left which isnt possible
     if(res != 2){
         std::cout << "START MENU FUNCTION FAILED" << std::endl;

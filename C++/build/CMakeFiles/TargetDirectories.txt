@@ -1,0 +1,4 @@
+H:/cosc345/commandLine/C++/build/CMakeFiles/COMMANDLINE.dir
+H:/cosc345/commandLine/C++/build/CMakeFiles/src.dir
+H:/cosc345/commandLine/C++/build/CMakeFiles/ALL_BUILD.dir
+H:/cosc345/commandLine/C++/build/CMakeFiles/ZERO_CHECK.dir

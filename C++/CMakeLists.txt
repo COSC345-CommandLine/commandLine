@@ -4,7 +4,14 @@
 
 # Add source to this project's executable. 
 # New files (.cpp & .hpp) created need to be added here
-add_executable (cmakeci 
+cmake_minimum_required(VERSION 3.24)
+project(commandLine)
+
+set(CMAKE_CXX_STANDARD 17)
+
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+add_executable (COMMANDLINE 
 "main.cpp"
 "inputListener.cpp"
 "inputListener.hpp"
@@ -24,6 +31,8 @@ add_executable (cmakeci
 "lachlanRoom.hpp"
 "readArt.cpp"
 "readArt.hpp"
+"timer.cpp"
+"timer.hpp"
 "renderArt.cpp"
 "renderArt.hpp"
 "startScreen.cpp"
@@ -36,29 +45,31 @@ add_executable (cmakeci
 "textBox.hpp"
 )
 
-if (CMAKE_VERSION VERSION_GREATER 3.12)
-  set_property(TARGET cmakeci PROPERTY CXX_STANDARD 20)
-endif()
+# add_executable(TEST_COMMANDLINE
+# "tests/test.cpp"
+# )
 
 # New .cpp files should be included here
 add_library(src STATIC 
 inputListener.cpp
 optionsBox.cpp
-intorRoom.cpp
+introRoom.cpp
 oscarRoom.cpp
 anthonyRoom.cpp
 lachlanRoom.cpp
+timer.cpp
 callumRoom.cpp
 readArt.cpp
 renderArt.cpp
 startScreen.cpp
+#tests/test.cpp
 saveOrLoadGame.cpp
 pauseMenu.cpp
 terminalHelpers.cpp
 textBox.cpp)
 target_include_directories(src PUBLIC ${CMAKE_CURRENT_LIST_DIR})
 
-file(COPY ${CMAKE_SOURCE_DIR}/C++/art DESTINATION ${CMAKE_BINARY_DIR})
+file(COPY ${CMAKE_SOURCE_DIR}/art DESTINATION ${CMAKE_BINARY_DIR})
 # configure_file(${CMAKE_CURRENT_SOURCE_DIR}/art ${CMAKE_CURRENT_BINARY_DIR} COPYONLY)
 
 # TODO: Add tests and install targets if needed.

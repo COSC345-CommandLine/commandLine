@@ -21,11 +21,14 @@ extern const std::string room0ZOOMED[];
 extern const std::string room1[];
 extern const std::string room1ZOOMED[];
 extern const std::string room2ZOOMED[];
+extern bool room1VIEWED[];
+extern bool room1ZOOMEDVIEWED[];
 extern const std::string room2[];
 extern const std::string room3[];
 extern const std::string room3ZOOMED[];
 extern const std::string room4[];
 extern char** art;
+extern bool globalZoomed;
 extern int artWidth, artHeight;
 extern bool testMode;
 
