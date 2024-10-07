@@ -45,9 +45,39 @@ add_executable (COMMANDLINE
 "textBox.hpp"
 )
 
-# add_executable(TEST_COMMANDLINE
-# "tests/test.cpp"
-# )
+add_executable(TEST_COMMANDLINE
+"tests/test.cpp"
+"inputListener.cpp"
+"inputListener.hpp"
+"optionsBox.cpp"
+"optionsBox.hpp"
+"introRoom.cpp"
+"introRoom.hpp"
+"pauseMenu.cpp"
+"pauseMenu.hpp"
+"oscarRoom.cpp"
+"oscarRoom.hpp"
+"callumRoom.cpp"
+"callumRoom.hpp"
+"anthonyRoom.cpp"
+"anthonyRoom.hpp"
+"lachlanRoom.cpp"
+"lachlanRoom.hpp"
+"readArt.cpp"
+"readArt.hpp"
+"timer.cpp"
+"timer.hpp"
+"renderArt.cpp"
+"renderArt.hpp"
+"startScreen.cpp"
+"startScreen.hpp"
+"saveOrLoadGame.cpp"
+"saveOrLoadGame.hpp"
+"terminalHelpers.cpp"
+"terminalHelpers.hpp"
+"textBox.cpp"
+"textBox.hpp"
+)
 
 # New .cpp files should be included here
 add_library(src STATIC 
@@ -62,7 +92,7 @@ callumRoom.cpp
 readArt.cpp
 renderArt.cpp
 startScreen.cpp
-#tests/test.cpp
+tests/test.cpp
 saveOrLoadGame.cpp
 pauseMenu.cpp
 terminalHelpers.cpp

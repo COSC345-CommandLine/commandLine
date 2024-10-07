@@ -15,22 +15,50 @@
 #include "../startScreen.hpp"
 
 // Test set up
-const std::string room1test[4] = {"art/intro/W1.txt","art/intro/W2.txt","art/intro/W3.txt","art/intro/W4.txt"};
-const std::string room2test[4] = {"art/room2/W1.txt","art/room2/W2.txt","art/room2/W3.txt","art/room2/W4.txt"};
-const std::string room3test[4] = {"art/room3/W1.txt","art/room3/W2.txt","art/room3/W3.txt","art/room3/W4.txt"};
-const std::string room4test[4] = {"art/room4/W1.txt","art/room4/W2.txt","art/room4/W3.txt","art/room4/W4.txt"};
+const int numWalls = 4;
+const std::string room0[numWalls] = {"build/art/room1/W1.txt", "build/art/room1/W2.txt", "build/art/room1/W3.txt", "build/art/room1/W4.txt"};  
+const std::string room0ZOOMED[numWalls] = {"art/intro/zoomed/W1Zoom.txt", "", "art/intro/zoomed/keypadZoom.txt", ""};
+bool room0VIEWED[numWalls] = {false, false, false, false};
+bool room0ZOOMEDVIEWED[numWalls] = {false, false, false, false};
 
-int artWidth = 0;
-int artHeight = 0;
-int roomNumber = 1;
+//Oscars room
+const std::string room1[numWalls] = {"build/art/room1/W1.txt", "build/art/room1/W2.txt", "build/art/room1/W3.txt", "build/art/room1/W4.txt"};  
+const std::string room1ZOOMED[numWalls] = {"art/room1/zoomed/W1Zoom.txt", "", "art/room1/zoomed/W3Zoom.txt", ""};
+bool room1VIEWED[numWalls] = {false, false, false, false};
+bool room1ZOOMEDVIEWED[numWalls] = {false, false, false, false};
+
+// Lachlans Room
+
+const std::string room2[numWalls] = {"build/art/room2/W1.txt", "build/art/room2/W2.txt", "build/art/room2/W3.txt", "build/art/room2/W4.txt"}; 
+const std::string room2ZOOMED[8] = {"build/art/room2/Zoomed/W1Z5.txt", "build/art/room2/Zoomed/W2Zoom.txt", "build/art/room2/Zoomed/W3Zoom.txt", "build/art/room2/Zoomed/W4Zoom.txt", "build/art/room2/Zoomed/W1Z4.txt", "art/room2/Zoomed/W1Z3.txt", "art/room2/Zoomed/W1Z2.txt", "art/room2/Zoomed/W1Z1.txt"};
+bool room2VIEWED[numWalls] = {false, false, false, false};
+bool room2ZOOMEDVIEWED[numWalls] = {false, false, false, false};
+
+// Anthonys Room
+const std::string room3[numWalls] = {"build/art/room3/W1.txt", "build/art/room3/W2.txt", "build/art/room3/W3.txt", "build/art/room3/W4.txt"};
+const std::string room3ZOOMED[numWalls] = {"build/art/room3/zoomed/W1Zoom.txt", "build/art/room3/zoomed/W2Zoom.txt", "", "build/art/room3/zoomed/W4Zoom.txt"};
+bool room3VIEWED[numWalls] = {false, false, false, false};
+bool room3ZOOMEDVIEWED[numWalls] = {false, false, false, false};
+
+// Callum Room
+const std::string room4[numWalls] = {"build/art/room4/W1.txt", "build/art/room4/W2.txt", "build/art/room4/W3.txt", "build/art/room4/W4.txt"}; 
+bool room4VIEWED[numWalls] = {false, false, false, false};
+bool room4ZOOMEDVIEWED[numWalls] = {false, false, false, false};
+
+std::string saveFileName;
+std::string listenerType = "RoomLeftRight";
+int roomNumber = 0;
 int currentWallIndex = 0;
 char** art = nullptr;
+int artWidth = 0, artHeight = 0;
 int totalConsoleHeight = 0;
 int totalConsoleWidth = 0;
 int  fullScreenTextBoxHeight = 0;
 char input = ' ';
 bool running = true;
+bool globalZoomed = false;
 
+std::vector<std::string> currentWall;
 
 // Checks if the images for the rooms being rendered are the correct dimensions
 bool imageSize(const std::string& filename, char** &art, int &artWidth, int &artHeight){
@@ -46,25 +74,25 @@ bool imageSizeCheck(){
     //tests for image sizes
     bool failed = false;
     for(int i = 0; i < 4; i++){
-        if(!imageSize(room1test[i], art, artWidth, artHeight)){
+        if(!imageSize(room1[i], art, artWidth, artHeight)){
             failed = true;
         }
     }
         // tests for image sizes
     for(int i = 0; i < 4; i++){
-        if(!imageSize(room2test[i], art, artWidth, artHeight)){
+        if(!imageSize(room2[i], art, artWidth, artHeight)){
             failed = true;
         }
     }
         // tests for image sizes
     for(int i = 0; i < 4; i++){
-        if(!imageSize(room3test[i], art, artWidth, artHeight)){
+        if(!imageSize(room3[i], art, artWidth, artHeight)){
             failed = true;
         }
     }
         // tests for image sizes
     for(int i = 0; i < 4; i++){
-        if(!imageSize(room4test[i], art, artWidth, artHeight)){
+        if(!imageSize(room4[i], art, artWidth, artHeight)){
             failed = true;
         }
     }
