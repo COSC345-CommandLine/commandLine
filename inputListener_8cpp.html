@@ -93,7 +93,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:aab154b082dd58cba1ed43eb82adcf168"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter for global variable 'input'.  <a href="inputListener_8cpp.html#aab154b082dd58cba1ed43eb82adcf168">More...</a><br /></td></tr>
 <tr class="separator:aab154b082dd58cba1ed43eb82adcf168"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6360027afc67b66e1d30b028f02ddbe1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inputListener_8cpp.html#a6360027afc67b66e1d30b028f02ddbe1">roomInputListenerIntro</a> (bool *introZoomed)</td></tr>
-<tr class="memdesc:a6360027afc67b66e1d30b028f02ddbe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listens and responds to input inside of Oscars Room.  <a href="inputListener_8cpp.html#a6360027afc67b66e1d30b028f02ddbe1">More...</a><br /></td></tr>
+<tr class="memdesc:a6360027afc67b66e1d30b028f02ddbe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listens and responds to input inside of Intro Room.  <a href="inputListener_8cpp.html#a6360027afc67b66e1d30b028f02ddbe1">More...</a><br /></td></tr>
 <tr class="separator:a6360027afc67b66e1d30b028f02ddbe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1419f655824311811fae1ba7200abd45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="inputListener_8cpp.html#a1419f655824311811fae1ba7200abd45">roomInputListenerOscar</a> (bool *oscarZoomed)</td></tr>
 <tr class="memdesc:a1419f655824311811fae1ba7200abd45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Listens and responds to input inside of Oscars Room.  <a href="inputListener_8cpp.html#a1419f655824311811fae1ba7200abd45">More...</a><br /></td></tr>
@@ -184,7 +184,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>esc</b> = 27</td></tr>
 </div><div class="memdoc">
 
 <p>Listens and responds to input inside of Anthonys Room. </p>
-<p>Listens for left and right arrows for navigation between walls. Listens for enter on zoomable walls. Listens for 'o' when zoomed in, and stops listening for left and right input when zoomed in </p>
+<p>Listens for left and right arrows for navigation between walls. Listens for enter on zoomable walls. Listens for '-' when zoomed in, and stops listening for left and right input when zoomed in </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">anthonyZoomed</td><td>[in] bool values stating whether view for Anthonys Room is zoomed in (true) or not (false) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -198,7 +203,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>esc</b> = 27</td></tr>
           <td class="memname">void roomInputListenerCallum </td>
           <td>(</td>
           <td class="paramtype">bool *&#160;</td>
-          <td class="paramname"><em>callumZoome</em>, </td>
+          <td class="paramname"><em>callumZoomed</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -227,7 +232,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>esc</b> = 27</td></tr>
 </div><div class="memdoc">
 
 <p>Listens and responds to input inside of callum Room. </p>
-<p>Listens for left and right arrows for navigation between walls. Listens for enter on zoomable walls. Listens for 'o' when zoomed in, and stops listening for left and right input when zoomed in </p>
+<p>Listens for left and right arrows for navigation between walls. Listens for enter on zoomable walls. Listens for '-' when zoomed in, and stops listening for left and right input when zoomed in </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timerRunning</td><td>[in] tells listener wheter timer is running </td></tr>
+    <tr><td class="paramname">lachlanZoomed</td><td>[in] bool values stating whether view for Lachlans Room is zoomed in (true) or not (false) </td></tr>
+    <tr><td class="paramname">oscarZoomed</td><td>[in] tells listener if door is open in room </td></tr>
+    <tr><td class="paramname">lachlanSolved</td><td>[in] bool values stating whether view for Lachlans Room is solved (true) or not (false) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -241,14 +254,19 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>esc</b> = 27</td></tr>
           <td class="memname">void roomInputListenerIntro </td>
           <td>(</td>
           <td class="paramtype">bool *&#160;</td>
-          <td class="paramname"><em>oscarZoomed</em></td><td>)</td>
+          <td class="paramname"><em>IntroZoomed</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Listens and responds to input inside of Oscars Room. </p>
-<p>Listens for left and right arrows for navigation between walls. Listens for enter on zoomable walls. Listens for 'o' when zoomed in, and stops listening for left and right input when zoomed in </p>
+<p>Listens and responds to input inside of Intro Room. </p>
+<p>Listens for left and right arrows for navigation between walls. Listens for enter on zoomable walls. Listens for '-' when zoomed in, and stops listening for left and right input when zoomed in </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">IntroZoomed</td><td>[in] bool values stating whether view for Intro Room is zoomed in (true) or not (false) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -291,7 +309,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>esc</b> = 27</td></tr>
 </div><div class="memdoc">
 
 <p>Listens and responds to input inside of Lachlans Room. </p>
-<p>Listens for left and right arrows for navigation between walls. Listens for enter on zoomable walls. Listens for 'o' when zoomed in, and stops listening for left and right input when zoomed in </p>
+<p>Listens for left and right arrows for navigation between walls. Listens for enter on zoomable walls. Listens for '-' when zoomed in, and stops listening for left and right input when zoomed in. Also listens for 'y' or 'n' when zoomed into specific walls </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timerRunning</td><td>[in] tells listener wheter timer is running </td></tr>
+    <tr><td class="paramname">lachlanZoomed</td><td>[in] bool values stating whether view for Lachlans Room is zoomed in (true) or not (false) </td></tr>
+    <tr><td class="paramname">oscarZoomed</td><td>[in] tells listener if door is open in room </td></tr>
+    <tr><td class="paramname">lachlanSolved</td><td>[in] bool values stating whether view for Lachlans Room is solved (true) or not (false) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -312,7 +338,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>esc</b> = 27</td></tr>
 </div><div class="memdoc">
 
 <p>Listens and responds to input inside of Oscars Room. </p>
-<p>Listens for left and right arrows for navigation between walls. Listens for enter on zoomable walls. Listens for 'o' when zoomed in, and stops listening for left and right input when zoomed in </p>
+<p>Listens for left and right arrows for navigation between walls. Listens for enter on zoomable walls. Listens for '-' when zoomed in, and stops listening for left and right input when zoomed in </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">oscarZoomed</td><td>[in] bool values stating whether view for Oscars Room is zoomed in (true) or not (false) </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
