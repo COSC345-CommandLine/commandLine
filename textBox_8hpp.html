@@ -87,6 +87,9 @@ Functions</h2></td></tr>
 <tr class="memitem:aa3bfd9345a5f0463457a590b72ee7d62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textBox_8hpp.html#aa3bfd9345a5f0463457a590b72ee7d62">renderBox</a> (int startX, int endX, int startY, int endY, const std::string &amp;text, bool zoomedIn, bool wallSeen, bool zoomedWallSeen, std::string helperInstruction)</td></tr>
 <tr class="memdesc:aa3bfd9345a5f0463457a590b72ee7d62"><td class="mdescLeft">&#160;</td><td class="mdescRight">renders test box on screen with text  <a href="textBox_8hpp.html#aa3bfd9345a5f0463457a590b72ee7d62">More...</a><br /></td></tr>
 <tr class="separator:aa3bfd9345a5f0463457a590b72ee7d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ff1eaad90a7d2ac099c913f6151034b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="textBox_8hpp.html#a2ff1eaad90a7d2ac099c913f6151034b">renderHelperInstruction</a> (std::string helperInstruction, int boxWidth, int boxHeight)</td></tr>
+<tr class="memdesc:a2ff1eaad90a7d2ac099c913f6151034b"><td class="mdescLeft">&#160;</td><td class="mdescRight">renders test box on screen with text  <a href="textBox_8hpp.html#a2ff1eaad90a7d2ac099c913f6151034b">More...</a><br /></td></tr>
+<tr class="separator:a2ff1eaad90a7d2ac099c913f6151034b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -195,6 +198,50 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>room3ZOOMEDVIEWED</b>
     <tr><td class="paramname">startY</td><td>[in] top left Y coord of box </td></tr>
     <tr><td class="paramname">endY</td><td>[in] bottom right Y coord of box </td></tr>
     <tr><td class="paramname">text</td><td>[in] text to be displayed on screen </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2ff1eaad90a7d2ac099c913f6151034b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ff1eaad90a7d2ac099c913f6151034b">&#9670;&nbsp;</a></span>renderHelperInstruction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void renderHelperInstruction </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>helperInstruction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>boxWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>boxHeight</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>renders test box on screen with text </p>
+<p>makes text appear in middle of box with scrolling effect </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">helperInstruction</td><td>[in] text to be displayed in bottom right of box </td></tr>
+    <tr><td class="paramname">boxWidth</td><td>[in] width of displayed box (amount of characters) </td></tr>
+    <tr><td class="paramname">boxHeight</td><td>[in] height of displayed box (amount of lines) </td></tr>
   </table>
   </dd>
 </dl>
