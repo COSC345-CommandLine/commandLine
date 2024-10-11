@@ -6,5 +6,5 @@ var searchData=
   ['startscreen_2ecpp_54',['startScreen.cpp',['../startScreen_8cpp.html',1,'']]],
   ['startscreen_2ehpp_55',['startScreen.hpp',['../startScreen_8hpp.html',1,'']]],
   ['starttimer_56',['startTimer',['../timer_8hpp.html#aec53975ffc59ffaf3080db21af0d2f6e',1,'timer.cpp']]],
-  ['stringinputbox_57',['stringInputBox',['../optionsBox_8cpp.html#a879ca5687570b58d771d7b074efb14d8',1,'stringInputBox(std::string wordIn):&#160;optionsBox.cpp'],['../optionsBox_8hpp.html#a879ca5687570b58d771d7b074efb14d8',1,'stringInputBox(std::string wordIn):&#160;optionsBox.cpp']]]
+  ['stringinputbox_57',['stringInputBox',['../optionsBox_8cpp.html#a651d99301ee37efa16601cf500920cdb',1,'stringInputBox(const std::string &amp;wordIn):&#160;optionsBox.cpp'],['../optionsBox_8hpp.html#a651d99301ee37efa16601cf500920cdb',1,'stringInputBox(const std::string &amp;wordIn):&#160;optionsBox.cpp']]]
 ];
